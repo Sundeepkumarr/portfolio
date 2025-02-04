@@ -36,7 +36,7 @@
     margin-left: -4.5%;
     position: absolute;
     font-size: 30px;
-    color: #ffa500;
+    color: #fe6807;
     opacity: 0;
     animation: textFade 10s infinite;
 }
@@ -61,7 +61,7 @@
     margin-left: 1%;
     position: absolute;
     font-size: 20px;
-    color: #ffa500;
+    color: #fe6807;
     opacity: 0;
     /* animation: roleFade 15s infinite; */
     animation: roleAnimation 15s linear infinite;
@@ -123,15 +123,15 @@
 
 .soc a {
     display: inline-flex;
-    color: #ffa500;
+    color: #fe6807;
     padding: 10px;
-    border: 2px solid #ffa500;
+    border: 2px solid #fe6807;
     flex-direction: column;
-    border: 2px solid #ffa500;
+    border: 2px solid #fe6807;
     text-decoration: none;
     transform: translateY(50%);
     font-size: 20px;
-    color: #ffa500;
+    color: #fe6807;
     margin: 0 8px;
     transition: transform 0.3s ease;
     border-radius: 50%;
@@ -150,7 +150,7 @@
     padding: 10px 20px;
     /* background: #ffa500; */
     border-radius: 25px;
-    border: 2px solid #ffa500;
+    border: 2px solid #fe6807;
     color: #000000;
     text-decoration: none;
     border-radius: 5px;
@@ -278,7 +278,7 @@
         justify-content: left;
         position: absolute;
         font-size: 24px;
-        color: #ffa500;
+        color: #fe6807;
         opacity: 0;
         animation: textFade 10s infinite;
     }
@@ -307,7 +307,7 @@
         margin-left: 1%;
         position: absolute;
         font-size: 20px;
-        color: #ffa500;
+        color: #fe6807;
         opacity: 0;
         /* animation: roleFade 15s infinite; */
         animation: roleAnimation 15s linear infinite;
@@ -548,7 +548,7 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #ffa500;
+    color: #fe6807;
 }
 
 
@@ -587,7 +587,7 @@ Footer
 }
 .social-media a {
     margin: 0 10px;
-    color: #ffa500;
+    color: #fe6807;
     font-size: 20px;
     text-decoration: none;
     transition: color 0.3s;
@@ -670,7 +670,7 @@ Footer
     }
 
     .menu li a:hover {
-        color: #ffa500;
+        color: #fe6807;
     }
     /* .footer {
         margin-bottom: -65px;
