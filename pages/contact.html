@@ -663,7 +663,7 @@
             }
 
             .toggle-btn {
-                margin-right: -135px;
+                margin-right: -90px;
                 display: block;
                 font-size: 24px;
                 background: none;
@@ -874,7 +874,7 @@
         <p>&copy; <span id="year"></span> Sundeep Kumarr | Designed with <span style="color: #f2023a;">&#10084;</span>
         </p>
     </footer>
-    <script>
+    <script src="../script.js" type="module">
         function toggleMenu() {
             const menuOverlay = document.getElementById("menuOverlay");
             const contentWrapper = document.querySelector('.content-wrapper');
@@ -886,75 +886,6 @@
         const currentYear = new Date().getFullYear();
         document.getElementById("year").textContent = currentYear;
 
-
-        // Skill data
-        const skills = {
-            programming: [
-                { name: "C++", percent: 65, color: "#ffc669" },
-                { name: "C", percent: 50, color: "#ff5347" },
-                { name: "Python", percent: 5, color: "#3572A5" }
-            ],
-            web: [
-                { name: "HTML", percent: 50, color: "#4d29ff" },
-                { name: "CSS", percent: 45, color: "#fada21" },
-                // { name: "JavaScript", percent: 0, color: "#f0db4f" }
-            ],
-            app: [
-                { name: "Flutter", percent: 65, color: "#ff43d0" },
-                { name: "Dart", percent: 70, color: "#3dff3d" },
-                // { name: "React Native", percent: 65, color: "#61dafb" }
-            ],
-            database: [
-                { name: "SQL", percent: 75, color: "#00758f" },
-                { name: "MongoDB", percent: 65, color: "#4DB33D" },
-                { name: "Firebase", percent: 70, color: "#FFCA28" }
-            ],
-            tools: [
-                { name: "Git", percent: 40, color: "#F1502F" },
-                { name: "Docker", percent: 20, color: "#2496ED" },
-                { name: "VS Code", percent: 55, color: "#007ACC" }
-            ]
-        };
-
-        // Populate dropdown content
-        document.addEventListener('DOMContentLoaded', () => {
-            for (const category in skills) {
-                const container = document.getElementById(category);
-                container.innerHTML = skills[category].map(skill => `
-                    <div class="card">
-                        <div class="percent" style="--clr:${skill.color}; --num:${skill.percent};">
-                            <div class="dot"></div>
-                            <svg>
-                                <circle cx="70" cy="70" r="50"></circle>
-                                <circle cx="70" cy="70" r="50"></circle>
-                            </svg>
-                            <div class="number">
-                                <h2>${skill.percent}<span>%</span></h2>
-                                <p>${skill.name}</p>
-                            </div>
-                        </div>
-                    </div>
-                `).join('');
-            }
-        });
-
-        // Dropdown toggle function
-        function toggleDropdown(category) {
-            const dropdown = document.getElementById(category);
-            const btn = dropdown.previousElementSibling;
-            const icon = btn.querySelector('i');
-
-            dropdown.classList.toggle('show');
-            icon.classList.toggle('rotate');
-
-            // Close other dropdowns
-            document.querySelectorAll('.dropdown-content').forEach(other => {
-                if (other !== dropdown && other.classList.contains('show')) {
-                    other.classList.remove('show');
-                    other.previousElementSibling.querySelector('i').classList.remove('rotate');
-                }
-            });
-        }
 
     </script>
 </body>
